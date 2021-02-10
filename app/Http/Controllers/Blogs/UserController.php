@@ -34,6 +34,7 @@ class UserController extends Controller
         }
         $pwd = $pwd[0] -> pwd;
         $token = md5($username);
+        $password = md5($password);
         if($password == $pwd){
             $data = [
                 'code'=>200,
